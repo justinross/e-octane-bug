@@ -1,3 +1,6 @@
+# Description
+This repo demonstrates an issue I'm having with ember-cli 3.11.0 and the ember octane blueprint. The /fail route throws an error (`Uncaught (in promise) TypeError: 'ownKeys' on proxy: trap returned extra keys but proxy target is non-extensible`)in the console, while /success does not. This error is being reproduced here by passing `{{model}}` to a component as an argument, then using a promise in the component to modify a property of said component.
+
 # comp-test
 
 This README outlines the details of collaborating on this Ember application.
